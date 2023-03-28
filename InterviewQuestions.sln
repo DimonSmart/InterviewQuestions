@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewQuestions", "InterviewQuestions\InterviewQuestions.csproj", "{D50D4340-4AFC-4E94-AB43-2F5D06639335}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewQuestionsTests", "InterviewQuestionsTests\InterviewQuestionsTests.csproj", "{CBCF5308-1CEF-4508-B060-47AB206E812E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D50D4340-4AFC-4E94-AB43-2F5D06639335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D50D4340-4AFC-4E94-AB43-2F5D06639335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D50D4340-4AFC-4E94-AB43-2F5D06639335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D50D4340-4AFC-4E94-AB43-2F5D06639335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBCF5308-1CEF-4508-B060-47AB206E812E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCF5308-1CEF-4508-B060-47AB206E812E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCF5308-1CEF-4508-B060-47AB206E812E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCF5308-1CEF-4508-B060-47AB206E812E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B319BD0-D667-4E29-8F03-1A76F709607C}
+	EndGlobalSection
+EndGlobal
