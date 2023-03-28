@@ -7,12 +7,6 @@ public static class OddOccurrencesInArray
 {
     public static int Solution(int[] A)
     {
-        // Implement your solution here
-        int i = 0;
-        foreach (var j in A)
-        {
-            i ^= j;
-        }
-        return i;
+        return A.Aggregate(0, (acc, num) => acc ^ num);
     }
 }

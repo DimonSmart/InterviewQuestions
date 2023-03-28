@@ -7,7 +7,6 @@ public static class CyclicRotation
 {
     public static int[] Solution(int[] A, int K)
     {
-        // Implement your solution here
         if (A.Length == 0) return A;
         var actual = K % A.Length;
         if (actual == 0) return A;
