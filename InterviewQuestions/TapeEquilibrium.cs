@@ -1,5 +1,8 @@
 ﻿namespace InterviewQuestions;
 
+/// <summary>
+/// https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
+/// </summary>
 public static class TapeEquilibrium
 {
     public static int Solution(int[] A)
