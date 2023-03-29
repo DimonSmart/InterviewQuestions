@@ -65,3 +65,7 @@ Here's a breakdown of how the code works:
 3. (distance % D == 0 ? 0 : 1) - Calculate the additional jump required to cover any remaining distance that cannot be covered in full jumps. This is done by checking if there is a remainder when the total distance is divided by the fixed jump distance. If there is no remainder, the frog does not need an additional jump, so the result is 0. Otherwise, the frog needs one more jump to cover the remaining distance, so the result is 1.
 
 4. return (distance / D) + (distance % D == 0 ? 0 : 1); - Combine the results from step 2 and step 3 to get the minimum number of jumps required to reach the target point. The result is the sum of the full jumps and the additional jump (if needed).
+
+# PermMissingElem
+Task: Calculate the smallest positive integer missing from the input array A.
+Solution is calculating the sum of all the elements in the array and comparing it to the expected sum of positive integers from 1 to the length of the array plus one. The difference between the two sums is the smallest missing positive integer.
