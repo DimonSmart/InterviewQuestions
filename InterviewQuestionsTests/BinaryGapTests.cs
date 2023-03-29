@@ -8,8 +8,8 @@ namespace InterviewQuestionsTests
         [InlineData(20, 1)]
         [InlineData(15, 0)]
         [InlineData(32, 0)]
-        [InlineData(1162,3)]
-        public void CalculateBinaryGapTest1 (int n, int gap)
+        [InlineData(1162, 3)]
+        public void CalculateBinaryGapTest1(int n, int gap)
         {
             Assert.Equal(gap, BinaryGap.Solution1(n));
         }
