@@ -122,4 +122,10 @@ The function should return the final state of the array m.
 Solution summary:
 In the solution, when the algorithm encounters the value N+1 in A, it sets maxApplied to the current maximum value in m and then skips to the next iteration of the loop. This is a speed optimization technique, as it avoids updating all the elements in m to the current maximum value. Instead, the algorithm only updates the elements that are incremented after the maxApplied variable is set. At the end of the loop through A, the algorithm only needs to update the elements in m that are less than maxApplied, further reducing the number of updates needed. This optimization reduces the overall time complexity of the algorithm, resulting in faster execution.
 
+## Missing Integer
+Task description:
+Find the smallest positive integer that is missing from the given array of integers.
+
+Solution summary:
+The main solution idea is to filter out all the negative and zero integers from the given array, sort the remaining positive integers, and then iteratively check for the smallest positive integer that is missing from the array. The code achieves this by initializing a missingNumber variable with 1 and then iterating through each element in the sorted array, incrementing missingNumber as necessary until the missing integer is found or the end of the array is reached.
 
