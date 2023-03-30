@@ -69,3 +69,12 @@ Here's a breakdown of how the code works:
 # PermMissingElem
 Task: Calculate the smallest positive integer missing from the input array A.
 Solution is calculating the sum of all the elements in the array and comparing it to the expected sum of positive integers from 1 to the length of the array plus one. The difference between the two sums is the smallest missing positive integer.
+
+# TapeEquilibrium
+Task description:
+
+You are given a ribbon with integer lengths, and you need to find the position to cut the ribbon such that the absolute difference between the sum of the lengths of each part is minimized.
+
+Solution summary:
+
+One possible solution to this task is to iterate through the ribbon and calculate the sum of the lengths of the elements up to the current index, and the sum of the lengths of the elements after the current index. Then, calculate the absolute difference between the two sums and store the minimum difference. Finally, return the minimum difference. This solution has a time complexity of O(n), where n is the length of the ribbon.
