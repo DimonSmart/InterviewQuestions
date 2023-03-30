@@ -1,7 +1,7 @@
 # InterviewQuestions
 Interview questions tasks with (sometimes) interesting solutions
 
-Tasks
+Iterations
 ## Binary Gap
 The goal of this code is to find the length of the longest sequence of consecutive 0's in the binary representation of an integer n.
 
@@ -14,6 +14,8 @@ The code then enters a loop that iterates sizeof(int) * 8 times (i.e., the numbe
 Once the loop completes, the string s has the binary representation of n padded with leading '0's and delimited by 'X' at the beginning and end.
 
 The final step is to split the string s using "1" as the delimiter. This will produce a sequence of substrings, each of which consists of consecutive '0's. The Select method is then used to convert each substring into its length. The Where method is used to filter out any substring whose length equals maxLength. Finally, the OrderByDescending method is used to sort the remaining substrings by their length in descending order. The FirstOrDefault method is used to return the length of the first substring in the sorted sequence, which represents the length of the longest sequence of consecutive 0's in the binary representation of n.
+
+# Arrays
 ## Cyclic Rotation
 The goal of this code is to rotate the elements of an integer array A by K positions to the right.
 
@@ -53,7 +55,8 @@ Here's a step-by-step breakdown of how the code works:
 
 In summary, the code uses the bitwise XOR operator to find the element in an integer array A that appears an odd number of times by XORing all the elements together
 
-# Frog Jump
+# Time Complexity
+## Frog Jump
 The goal is to calculate the minimum number of jumps required for a frog to go from a starting point X to a target point Y, with a fixed jump distance of D.
 
 Here's a breakdown of how the code works:
@@ -66,11 +69,11 @@ Here's a breakdown of how the code works:
 
 4. return (distance / D) + (distance % D == 0 ? 0 : 1); - Combine the results from step 2 and step 3 to get the minimum number of jumps required to reach the target point. The result is the sum of the full jumps and the additional jump (if needed).
 
-# PermMissingElem
+# Permutation Missing Element
 Task: Calculate the smallest positive integer missing from the input array A.
 Solution is calculating the sum of all the elements in the array and comparing it to the expected sum of positive integers from 1 to the length of the array plus one. The difference between the two sums is the smallest missing positive integer.
 
-# TapeEquilibrium
+## Tape Equilibrium
 Task description:
 
 You are given a ribbon with integer lengths, and you need to find the position to cut the ribbon such that the absolute difference between the sum of the lengths of each part is minimized.
@@ -78,3 +81,45 @@ You are given a ribbon with integer lengths, and you need to find the position t
 Solution summary:
 
 One possible solution to this task is to iterate through the ribbon and calculate the sum of the lengths of the elements up to the current index, and the sum of the lengths of the elements after the current index. Then, calculate the absolute difference between the two sums and store the minimum difference. Finally, return the minimum difference. This solution has a time complexity of O(n), where n is the length of the ribbon.
+
+# Counting Elements
+## FrogRiverOne
+Task description:
+
+Given an array A representing positions of fallen leaves on a river and an integer X representing the destination position, find the earliest time when the leaves can be used to cross the river from one bank to the other in sequential order.
+
+Solution summary:
+
+The code implements a solution to this task using a HashSet to keep track of the positions of the fallen leaves. The algorithm iterates through the input array A and adds each element to the HashSet. When the size of the HashSet is equal to X, the algorithm returns the current index as the earliest time to cross the river. If the size of the HashSet never reaches X, the algorithm returns -1, indicating that it is impossible to cross the river.
+
+The algorithm has a time complexity of O(n), where n is the length of the input array A. This is because adding an element to a HashSet and checking the size of a HashSet takes constant time on average. Therefore, the algorithm is efficient and can handle large input sizes.
+
+## Permutation Check
+
+Task description:
+
+Determine whether an array A of distinct integers from 1 to N is a permutation, i.e., contains all integers from 1 to N.
+
+Solution summary:
+
+The solution determines whether the input array A is a permutation by checking if it meets the following conditions:
+
+The length of the array A is equal to the number of distinct elements in A.
+The maximum element in A is equal to the length of A.
+If both conditions are met, the array A is a permutation, and the solution returns 1. Otherwise, the solution returns 0.
+
+The algorithm has a time complexity of O(n), where n is the length of the input array A.
+
+## MaxCounters
+Task description:
+
+Given an integer N and an array A of integers representing operations, perform the following operations on an array m of length N:
+
+If the value of A[i] is between 1 and N, increase the value of m[A[i]-1] by 1.
+If the value of A[i] is equal to N + 1, set all values of m to the maximum value of m.
+The function should return the final state of the array m.
+
+Solution summary:
+In the solution, when the algorithm encounters the value N+1 in A, it sets maxApplied to the current maximum value in m and then skips to the next iteration of the loop. This is a speed optimization technique, as it avoids updating all the elements in m to the current maximum value. Instead, the algorithm only updates the elements that are incremented after the maxApplied variable is set. At the end of the loop through A, the algorithm only needs to update the elements in m that are less than maxApplied, further reducing the number of updates needed. This optimization reduces the overall time complexity of the algorithm, resulting in faster execution.
+
+
