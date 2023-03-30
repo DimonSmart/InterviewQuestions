@@ -22,6 +22,6 @@ public static class TapeEquilibrium
                 diff = newDiff;
             }
         }
-        return (int)diff;
+        return diff;
     }
 }
