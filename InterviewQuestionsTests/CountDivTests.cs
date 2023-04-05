@@ -10,5 +10,4 @@
             Assert.Equal(expected, CountDiv.Solution(a, b, k));
         }
     }
-    
 }
