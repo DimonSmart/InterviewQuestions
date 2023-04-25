@@ -39,5 +39,4 @@ public static class BinaryGap
 
         return matches.Any() ? matches.Select(m => m.Length).OrderByDescending(l => l).FirstOrDefault() - 2 : 0;
     }
-
 }

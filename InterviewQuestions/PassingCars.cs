@@ -1,5 +1,8 @@
 ﻿namespace InterviewQuestions;
 
+/// <summary>
+/// https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/
+/// </summary>
 public static class PassingCars
 {
     public static int Solution(int[] A)

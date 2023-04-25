@@ -10,4 +10,3 @@ public static class PermCheck
         return A.Length == A.Distinct().Count() && A.Max() == A.Length ? 1 : 0;
     }
 }
-
